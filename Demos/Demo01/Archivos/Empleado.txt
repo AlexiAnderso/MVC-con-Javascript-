@@ -1,0 +1,4 @@
+Codigo: 3
+Nombre: Alexis
+Apellido: Quesada
+Sueldo: 6000
