@@ -1,0 +1,34 @@
+﻿body {
+    background-color:aqua;
+    width:100%;
+}
+
+.Titulo {
+    background-color: blue;
+    color:white;
+    font-family: Arial;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.Subtitulo {
+    background-color:white;
+    color: blue;
+    font-family: Arial;
+    font-size: x-large;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+.FilaCabecera {
+    background-color: lightgray;
+    color: black;
+}
+
+.FilaDatos {
+    background-color: white;
+    color: black;
+}

@@ -1,0 +1,54 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Menu</title>
+	<link href="~/Estilos/Estilo.css" rel="stylesheet" />
+</head>
+<body>
+    <div> 
+		<table>
+			<tr class="Titulo">
+				<td>Demo 03: Tipos de Resultados de Acciones en MVC (AcctionsResults)</td>
+			</tr>
+			<tr class="Subtitulo">
+				<td>Menu de Opciones</td>
+			</tr>
+			<tr>
+				<!--Se deberia de poner El controler (Sistemas/Saludo) pero
+					tambien permite poner solo la accion (saludo)-->
+				<td><a href="Sistema/Saludo"> Saludo </a></td>
+			</tr>
+			<tr>
+				<td><a href="Sistema/FechaHoraActual"> Fecha y Hora Actual</a></td>
+			</tr>
+			<tr>
+				<td><a href="Sistema/DatosEmpleado">Lista de Empleado - Json</a></td>
+			</tr>
+			<tr>
+				<td><a href="Sistema/BajarArchivo">Descarga Excel de Repaso PC 3</a></td>
+			</tr>
+			<tr>
+				<td><a href="#" onclick="saludo()">Ejecutar JavaScript Saludo</a></td>
+			</tr>
+			<tr>
+				<td><a href="#" onclick="crearTabla()">Ejecutar JavaScript CrearTabla</a></td>
+			</tr>
+			<tr>
+				<td>
+					<div id="divTabla"></div>
+				</td>
+			</tr>
+		</table>
+    </div>
+	<script src="Sistema/mostrarMensaje">
+
+	</script>
+</body>
+</html>
