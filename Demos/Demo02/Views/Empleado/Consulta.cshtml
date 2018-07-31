@@ -1,0 +1,55 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width"/>
+	<title>Consultar</title>
+	<link href="~/Estilos/Estilo.css" rel="stylesheet" />
+</head>
+<body>
+	<div>
+		<!--Usando MVC Form, se usa el arrobaUsing(beginform)-->
+		@using(Html.BeginForm()) {
+		<table>
+			<tr class="Titulo">
+				<td colspan="2">Demo 02: Ejemplo de MVC Form</td>
+			</tr>
+			<tr class="Subtitulo">
+				<td colspan="2">Consulta de Empleado</td>
+			</tr>
+			<tr>
+				<td style="width:20%">Codigo: </td>
+				<td style="width:80%">
+					@Html.TextBox("idEmpleado")
+				</td>
+			</tr>
+			<tr>
+				<td>Apellido: </td>
+				<td>
+					@Html.TextBox("Apellido")
+				</td>
+			</tr>
+			<tr>
+				<td>Nombre: </td>
+				<td>
+					@Html.TextBox("Nombre")
+				</td>
+			</tr>
+			<tr>
+				<td>Sueldo: </td>
+				<td>
+					@Html.TextBox("Sueldo")
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input  type="submit" name="operacion" id="btnConsultar" value="Consultar" />
+					<input type="submit" name="operacion" id="btnExportar" value="Exportar" />
+				</td>
+			</tr>
+		</table>
+		}
+	</div>
+</body>
+</html>
