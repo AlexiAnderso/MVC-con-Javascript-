@@ -1,0 +1,40 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Lista de Clientes</title>
+	<link href="~/Estilos/Estilo.css" rel="stylesheet" />
+</head>
+<body>
+    <div> 
+		<table>
+			<tr class="Titulo">
+				<td>Demo 05: Filtro Desconectado con TextBox en una Consulta Asincrona con XHR</td>
+			</tr>
+			<tr class="Subtitulo">
+				<td>Consulta de Clientes por Nombre</td>
+			</tr>
+			<tr>
+				<td>Nombre del Cliente: 
+					<input id="txtNombre" type="text" style="width:200px" />
+				</td>
+			</tr>
+			<tr>
+				<td><span id="spnMensaje"></span></td>
+			</tr>
+			<tr>
+				<td>
+					<div id="divCliente"></div>
+				</td>
+			</tr>
+		</table>
+    </div>
+	<script src="~/Script/Consulta.js"></script>
+</body>
+</html>
