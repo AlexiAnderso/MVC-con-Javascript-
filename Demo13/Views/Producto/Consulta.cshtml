@@ -1,0 +1,91 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Lista de Clientes</title>
+	<link href="~/Estilos/Estilo.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="divPrincipal"> 
+		<table>
+			<tr class="Titulo">
+				<td>Demo 13: Mantenimiento de una Tabla</td>
+			</tr>
+			<tr class="Subtitulo">
+				<td>Mantenimiento de Productos</td>
+			</tr>
+			<tr>
+				<td><span id="spnMensaje"></span></td>
+			</tr>
+			<tr>
+				<td>
+					<div id="divProducto"></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="divPagina" style="text-align:center"></div>
+				</td>
+			</tr>
+		</table>
+    </div>
+	<div id="divPopup" style="position:absolute; left:0px; top:0px; width:100%; height:100%; background-color:transparent; display:none;"  >
+		<div id="divDetalle"  style="position:absolute; left:20%; top:20%; width:60%; height:60%; background-color:wheat;" >
+			<table>
+				<tr>
+					<td style="width:95%; background-color:blue; color:white;">
+						<span id="spnTitulo" style="font-weight:bold"></span>
+					</td>
+					<td>
+						<img id="imgCerrar" src="~/Imagenes/Eliminar.png" width="30" height="30" alt="" title="Cerrar Ventana" style="cursor:pointer"/>
+					</td>
+				</tr>
+			</table>
+			<table>
+				<tr class="Subtitulo">
+					<td colspan="2">Datos del Producto</td>
+				</tr>
+				<tr>
+					<td colspan="2"><span id="spnMensajeDetalle" style="color:red;font-weight:bold"></span></td>
+				</tr>
+				<tr>
+					<td style="width:20%"> Id del Producto</td>
+					<td style="width:80%"> <span id="spnIdProducto"></span></td>
+				</tr>
+				<tr>
+					<td> Nombre del Producto: </td>
+					<td><input id="txtNombre" type="text" style="width:200px;"/></td>
+				</tr>
+				<tr>
+					<td> Proveedor: </td>
+					<td><select id="cboProveedor" style="width:200px"></select></td>
+				</tr>
+				<tr>
+					<td> Categoria: </td>
+					<td><select id="cboCategoria" style="width:200px"></select></td>
+				</tr>
+				<tr>
+					<td> Precio Unitario: </td>
+					<td><input id="txtPrecio" type="text" style="width:50px;" /></td>
+				</tr>
+				<tr>
+					<td> Stock: </td>
+					<td><input id="txtStock" type="text" style="width:50px;" /></td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align:center"></td>
+					<td><input id="btnGrabar" value="Grabar" type="button" class="boton" /></td>
+					<td><input id="btnCerrar" value="Cerrar" type="button" class="boton" /></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<script src="~/Script/Consulta.js"></script>
+</body>
+</html>
