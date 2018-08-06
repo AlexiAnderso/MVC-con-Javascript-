@@ -1,0 +1,4 @@
+﻿idProducto,,
+Nombre,,
+PrecioUnitario,,
+Stock,,
